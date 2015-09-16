@@ -2,10 +2,9 @@
 
 ## Overview
 
-We're going to review the file structure we'll be using for our MVC Sinatra applications. We could, if we wanted to, write our entire app in a single file. As you might imagine, this would make things very difficult to read and debug. Keeping our code 
-organized is a huge part of developing complex applications. 
+We're going to review the file structure we'll be using for our MVC Sinatra applications. We could, if we wanted to, write our entire app in a single file. As you might imagine, this would make things very difficult to read and debug. Keeping our code organized is an of developing complex applications. This concept is called "separation of concerns." Each file in our application will have a different responsibility, and we'll keep these responsibilities split up into reasonable chunks. 
 
-## What does the File Structure Look Like?
+## What does a Sinatra MVC File Structure Look Like?
 
 Take a look at the file structure in this directory. It's okay if it feels overwhelming at first. We're going to walk through the different files and folders and discuss what their responsibilities are. 
 
