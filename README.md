@@ -44,7 +44,7 @@ This folder holds our MVC directories - `models`, `views`, and `controllers`
 
 #### `controllers` directory
 
-The controllers, such as `application_controller.rb`,  are where the application configurations, routes, and controller actions are implemented. There is typically a class, which in this case we will call `ApplicationController`, that represents an instance of your application when the server is up and running. Inside of the `ApplicationController` class, you can specify your Sinatra application configurations, as well as your routes and controller actions. Then through your controller actions, you would specify which views to be rendered. The `application_controller.rb` file represents the C components of the MVC paradigm.
+The controllers, such as `application_controller.rb`,  are where the application configurations, routes, and controller actions are implemented. There is typically a class, which in this case we will call `ApplicationController, that represents an instance of your application when the server is up and running. Inside of the `ApplicationController` class, you can specify your Sinatra application configurations, as well as your routes and controller actions. Then through your controller actions, you would specify which views to be rendered. The `application_controller.rb` file represents the C components of the MVC paradigm.
 
 #### `models` directory
 
@@ -62,5 +62,9 @@ This directory holds an `environment.rb` file. We'll be using this file to conne
 ### `public` directory
 
 The `public` directory holds our front-end assets. In the example above, it holds a `css` directory with a stylesheet. Javascript directories and any other front-end assets (like image files) should also be stored in `public`.
+
+### `spec` directory
+
+The `spec` directory contains any tests for our applications. These tests set up any expectations for the rest of the project. These can often be broken down into unit tests for models, controller tests for routes, and feature tests, which check the actual behavior for users. 
 
 
