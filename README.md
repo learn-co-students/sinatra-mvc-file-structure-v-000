@@ -52,6 +52,8 @@ This folder holds our MVC directories - `models`, `views`, and `controllers`. We
 
 The controllers, such as `application_controller.rb`, are where the application configurations, routes, and controller actions are implemented. There is typically a class, which in this case we will call `ApplicationController`, that represents an instance of your application when the server is up and running. The `application_controller.rb` file represents the "C" components of the MVC paradigm.
 
+(In some simple applications -including several Flatiron School labs and codealongs - the Application Controller will simply be called `app.rb` and will live in the root directory of the project)
+
 Sometimes our other controllers will use `ApplicationController` as an inheritance point so that they inherit all the defaults and behaviors defined in our main `ApplicationController`. Other times our other controllers will simply inherit from `Sinatra::Base`.
 
 Controllers represent the application logic, generally, the interface and flow of our application.
