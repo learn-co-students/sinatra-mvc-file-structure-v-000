@@ -8,7 +8,7 @@ Keeping our code organized is crucial when developing complex applications. This
 
 ## What does a Sinatra MVC File Structure Look Like?
 
-Take a look at the file structure in this directory. It's okay if it feels overwhelming at first. We're going to walk through the different files and folders and discuss what their responsibilities are.
+Take a look at the file structure in this directory (Feel free to fork and clone the directory locally). It's okay if it feels overwhelming at first. We're going to walk through the different files and folders and discuss what their responsibilities are.
 
 ```bash
 ├── Gemfile
