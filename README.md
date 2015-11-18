@@ -6,6 +6,8 @@ We're going to review the file structure we'll be using for our MVC Sinatra appl
 
 Keeping our code organized is crucial when developing complex applications. This concept is called `separation of concerns` and `single responsibility`. Each file in our application will have a different responsibility and we'll keep these responsibilities split up into reasonable chunks.
 
+You'll be coding along in this walk-through. There are tests to run to make sure your solutions are working. Find the instructions underneath the descriptions for each file you'll be editing.
+
 ## What does a Sinatra MVC File Structure Look Like?
 
 Take a look at the file structure in this directory. You'll want to fork and clone this directory locally. It's okay if it feels overwhelming at first. We're going to walk through the different files and folders and discuss what their responsibilities are.
@@ -48,20 +50,7 @@ This directory holds the logic behind our application. Typically, these files re
 
 Models represent the data and object logic of our application.
 
-Let's go ahead and create a new file in the models directory to create a dog class. This class should have name, breed, and age attributes which can be set on initialization.
-
-
-```ruby
-class Dog
-  attr_accessor :name, :breed, :age
-
-  def initialize(name, breed, age)
-    @name = name
-    @breed = breed
-    @age = age
-  end
-end
-```
+Create a new file in the models directory to create a dog class. This class should have name, breed, and age attributes which can be set on initialization. You should be able to read and write to these attributes.
 
 #### `controllers` directory
 
@@ -79,21 +68,15 @@ You'll also notice there is a `configre` block already in the controller. This c
 
 When a client makes a request to a server to load an application, the request is received and processed by the controller. We need to set up a `controller action` to accept the request and respond with the appropriate HTML.
 
-```ruby
-get '/' do
-  @dog = Dog.new("ralph", "dalmation", 6)
-  erb :index
-end
-```
-
-This controller action responds to a `GET` request to the home page of your app. In this case, this action goes to the model to create an instance of the Dog class, and then responds with the `index.erb` file.
-
+You'll need a controller action that can receive and respond to a `GET` request to the root URL. Inside this controller action, you should create a new instance of the Dog class. You'll want to make sure you store it in an instance variable so your views have access to the variable.
 
 #### `views` directory
 
 This directory holds the code that will be displayed in the browser. In a Sinatra app we use `.erb` files instead of `.html` files because .erb files allow us to include regular, old HTML tags AND special erb tags which contain Ruby code. We can name them anything we like, but by convention, our file names will match up with the action that renders them. For example, a GET request to `/` typically renders a file called `index.erb`.
 
 Views represent how things look and are displayed in our application. We've filled in the views for you to display the dog Ralph we just created in our controller action. Feel free to take a look.
+
+Next, you need to tell the controller action you created to load this file. You can figure out how to do that by checking out the [Sinatra Documentation](http://www.sinatrarb.com/intro.html#Views%20/%20Templates).
 
 ### `config.ru` file
 
@@ -118,3 +101,5 @@ The `public` directory holds our front-end assets. In the example above, it hold
 ### `spec` directory
 
 The `spec` directory contains any tests for our applications. These tests set up any expectations for the rest of the project. These are often be broken down into unit tests for models, controller tests for routes, and feature tests, which check the actual behavior for users.
+
+Don't forget to run your tests!
