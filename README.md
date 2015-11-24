@@ -38,7 +38,7 @@ Take a look at the file structure in this directory. You'll want to fork and clo
 
 This holds a list of all the gems needed to run the application. The bundler gem provides us access to a terminal command: `bundle install`. Bundler will look in the Gemfile and install any gems, as well as any gem dependencies for this application.
 
-Go ahead and enter this command in terminal. It will create a `Gemfile.lock` file for you, which locks in the current versions of each gem for your application. This way any updates of the gems in the future won't potentially break your app.
+Go ahead and enter this command in terminal. It will create a `Gemfile.lock` file for you, which is just a documentation of what versions of the gem you have installed and should use. The lock word is actually because it makes sure that only one thing is running bundle install at a time.
 
 ### `app` directory
 
@@ -62,11 +62,11 @@ Sometimes our other controllers will use `ApplicationController` as an inheritan
 
 Controllers represent the application logic, generally, the interface and flow of our application.
 
-Let's go ahead and fill in our controller. You'll notice in `application_controller.rb`, we have a class `ApplicationController` which inherits from `Sinatra::Base`. When we start up a server, the server will spin up an instance of the ApplicationController class to run our app.
+Let's go ahead and fill in our controller. You'll notice in `application_controller.rb`, we have a class `ApplicationController` which inherits from `Sinatra::Base`. When we start up a server, the server will spin up an instance of the `ApplicationController` class to run our app.
 
-You'll also notice there is a `configre` block already in the controller. This configure block tells the controller where to look to find the views (your pages with HTML to display text in the browser.) and the public directory.
+You'll also notice there is a `configure` block already in the controller. This configure block tells the controller where to look to find the views (your pages with HTML to display text in the browser.) and the public directory.
 
-When a client makes a request to a server to load an application, the request is received and processed by the controller. We need to set up a `controller action` to accept the request and respond with the appropriate HTML.
+When a client makes a request to a server to load an application, the request is received and processed by the controller. We need to set up a controller action to accept the request and respond with the appropriate HTML.
 
 You'll need a controller action that can receive and respond to a `GET` request to the root URL. Inside this controller action, you should create a new instance of the Dog class. You'll want to make sure you store it in an instance variable so your views have access to the variable.
 
