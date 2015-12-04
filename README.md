@@ -2,15 +2,25 @@
 
 ## Overview
 
-We're going to review the file structure we'll be using for our MVC Sinatra applications. We could, if we wanted to, write our entire app in a single file. As you might imagine, this would make things very difficult to read and debug.
+We'll review the file structure we'll be using for our MVC Sinatra applications.
+
+## Objectives
+
+1. Explain the files and folders in a Sinatra MVC file structure
+2. Describe the different folders in the `app` directory and create new files and add code to these folders
+3. Complete and run a Sinatra MVC application
+
+## Keeping Code Organized 
+
+We could, if we wanted to, write our entire app in a single file. As you might imagine, this would make things very difficult to read and debug.
 
 Keeping our code organized is crucial when developing complex applications. This concept is called `separation of concerns` and `single responsibility`. Each file in our application will have a different responsibility and we'll keep these responsibilities split up into reasonable chunks.
 
-You'll be coding along in this walk-through. There are tests to run to make sure your solutions are working. Find the instructions underneath the descriptions for each file you'll be editing.
+You'll be coding along in this lesson so fork and clone this lab. There are tests to run to make sure your solutions are working. Find the instructions underneath the descriptions for each file you'll be editing.
 
 ## What does a Sinatra MVC File Structure Look Like?
 
-Take a look at the file structure in this directory. You'll want to fork and clone this directory locally. It's okay if it feels overwhelming at first. We're going to walk through the different files and folders and discuss what their responsibilities are.
+Take a look at the file structure in this directory. It's okay if it feels overwhelming at first. We're going to walk through the different files and folders and discuss what their responsibilities are.
 
 ```bash
 ├── Gemfile
@@ -56,7 +66,7 @@ Create a new file in the models directory to create a dog class. This class shou
 
 The controllers, such as `application_controller.rb`, are where the application configurations, routes, and controller actions are implemented. There is typically a class, which in this case we will call `ApplicationController`, that represents an instance of your application when the server is up and running. The `application_controller.rb` file represents the "C" components of the MVC paradigm.
 
-(In some simple applications -including several Flatiron School labs and code-alongs - the Application Controller will simply be called `app.rb` and will live in the root directory of the project)
+(In some simple applications -including several labs and code-alongs in this track - the Application Controller will simply be called `app.rb` and will live in the root directory of the project)
 
 Sometimes our other controllers will use `ApplicationController` as an inheritance point so that they inherit all the defaults and behaviors defined in our main `ApplicationController`. Other times our other controllers will simply inherit from `Sinatra::Base`.
 
