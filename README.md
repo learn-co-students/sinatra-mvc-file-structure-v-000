@@ -110,7 +110,7 @@ The `public` directory holds our front-end assets. In the example above, it hold
 
 ### `spec` directory
 
-The `spec` directory contains any tests for our applications. These tests set up any expectations for the rest of the project. These are often be broken down into unit tests for models, controller tests for routes, and feature tests, which check the actual behavior for users.
+The `spec` directory contains any tests for our applications. These tests set up any expectations for the rest of the project. These are often broken down into unit tests for models, controller tests for routes, and feature tests, which check the actual behavior for users.
 
 Don't forget to run your tests!
 
