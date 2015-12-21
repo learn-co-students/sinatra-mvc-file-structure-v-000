@@ -6,9 +6,9 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
-    @dog = Dog.new("ralph", "dalmation", 6) 
-  	erb :index
+    erb :index
+    @new_dog = Dog.new("Spot","dalmation",1000)
+    "<p>My dog's breed is #{@new_dog.breed}</p>"
   end
-
 
 end
