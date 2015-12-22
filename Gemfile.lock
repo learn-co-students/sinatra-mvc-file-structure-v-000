@@ -26,19 +26,19 @@ GEM
       rack (>= 1.0)
       rack-test (~> 0.6.2)
       ripl (>= 0.7.0)
-    rspec (3.3.0)
-      rspec-core (~> 3.3.0)
-      rspec-expectations (~> 3.3.0)
-      rspec-mocks (~> 3.3.0)
-    rspec-core (3.3.2)
-      rspec-support (~> 3.3.0)
-    rspec-expectations (3.3.1)
+    rspec (3.4.0)
+      rspec-core (~> 3.4.0)
+      rspec-expectations (~> 3.4.0)
+      rspec-mocks (~> 3.4.0)
+    rspec-core (3.4.1)
+      rspec-support (~> 3.4.0)
+    rspec-expectations (3.4.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.3.0)
-    rspec-mocks (3.3.2)
+      rspec-support (~> 3.4.0)
+    rspec-mocks (3.4.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.3.0)
-    rspec-support (3.3.0)
+      rspec-support (~> 3.4.0)
+    rspec-support (3.4.1)
     shotgun (0.9.1)
       rack (>= 1.0)
     sinatra (1.4.6)
@@ -65,7 +65,7 @@ DEPENDENCIES
   rack-test
   rake
   require_all
-  rspec
+  rspec (= 3.4.0)
   shotgun
   sinatra
   thin
