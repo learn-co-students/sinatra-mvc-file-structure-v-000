@@ -1,3 +1,5 @@
+require 'pry'
+
 class ApplicationController < Sinatra::Base
 
   configure do
@@ -6,6 +8,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
+	@dog = Dog.new("ralph","dalmation",6)
   	erb :index
   end
 end
