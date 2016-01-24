@@ -6,6 +6,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
-  	erb :index
+    @dogs = Dog.all
+  	erb :'index'
   end
 end
