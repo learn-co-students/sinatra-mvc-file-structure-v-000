@@ -1,3 +1,5 @@
+require_relative '../../config/environment'
+
 class ApplicationController < Sinatra::Base
 
   configure do
@@ -6,6 +8,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
+    @dog = Dog.new("bob", "dalmation", 1)
   	erb :index
   end
 end
