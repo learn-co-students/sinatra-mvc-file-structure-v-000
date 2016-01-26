@@ -1,3 +1,5 @@
+
+
 class ApplicationController < Sinatra::Base
 
   configure do
@@ -6,6 +8,9 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
+    @dog = Dog.new("Buddy", "Golden", 8)
   	erb :index
   end
+
+
 end
