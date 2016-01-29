@@ -114,4 +114,4 @@ The `spec` directory contains any tests for our applications. These tests set up
 
 Don't forget to run your tests!
 
-<a href='https://learn.co/lessons/sinatra-mvc-file-structure' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/sinatra-mvc-file-structure' title='Sinatra MVC File Structure'>Sinatra MVC File Structure</a> on Learn.co and start learning to code for free.</p>
