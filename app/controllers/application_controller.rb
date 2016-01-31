@@ -1,4 +1,5 @@
 class ApplicationController < Sinatra::Base
+  attr_accessor :dogg 
 
   configure do
   	set :views, "app/views"
@@ -6,6 +7,8 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
-  	erb :index
+   
+    @dogg = Dog.new
+    erb :index 
   end
 end
