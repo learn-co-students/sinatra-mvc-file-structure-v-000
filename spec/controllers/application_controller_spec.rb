@@ -38,7 +38,8 @@ describe ApplicationController do
 
     it 'renders index.erb' do
       get '/'
-      expect(last_response.body).to include("<p>My dog's breed is dalmation</p>")
+      expect(last_response.body).to include("<p> I love programming </p>")
     end
+
   end
 end
