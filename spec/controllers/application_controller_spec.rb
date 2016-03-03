@@ -2,6 +2,10 @@ require 'pry'
 
 describe ApplicationController do
   describe 'Dog class' do 
+
+    before do
+      DOG = []
+    end
     it 'can create a dog with attributes on initialization' do 
       Dog.new("rudolph", "mastiff", 2)
       expect(Dog.all.count).to eq (1)
@@ -38,8 +42,7 @@ describe ApplicationController do
 
     it 'renders index.erb' do
       get '/'
-      expect(last_response.body).to include("<p> I love programming </p>")
+      expect(last_response.body).to include("<p>My dog's breed is dalmation</p>")
     end
-
   end
 end
