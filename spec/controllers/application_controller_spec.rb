@@ -27,8 +27,8 @@ describe ApplicationController do
     end
     it 'can change dog age' do
       @dog = Dog.new("rudolph", "mastiff", 2)
-      @dog. name = "bessie"
-      expect(@dog.name).to eq("bessie")
+      @dog.age = 3
+      expect(@dog.age).to eq(3)
     end
   end
 
