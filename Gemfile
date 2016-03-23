@@ -1,5 +1,7 @@
+#Tells bundler where to get the gems
 source 'http://rubygems.org'
 
+#List the required gems, but does not load them
 gem 'sinatra'
 gem 'tux'
 gem 'require_all'
