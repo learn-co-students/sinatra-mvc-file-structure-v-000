@@ -32,7 +32,7 @@ describe ApplicationController do
     end
      it 'can change dog age' do
       @dog = Dog.new("rudolph", "mastiff", 2)
-      @dog.age = "4"
+      @dog.age = 4
       expect(@dog.age).to eq("4")
     end
   
