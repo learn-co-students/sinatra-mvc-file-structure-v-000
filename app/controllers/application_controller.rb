@@ -9,3 +9,7 @@ class ApplicationController < Sinatra::Base
   	erb :index
   end
 end
+
+
+class Dog < Sinatra::Base
+  end
