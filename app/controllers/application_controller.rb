@@ -1,3 +1,4 @@
+require 'pry'
 class ApplicationController < Sinatra::Base
 
   configure do
@@ -6,6 +7,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
+    @dogs = Dog.all
   	erb :index
   end
 end
