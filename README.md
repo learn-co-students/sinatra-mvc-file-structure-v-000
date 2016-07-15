@@ -1,4 +1,4 @@
-# Sinatra MVC File Structure
+learn# Sinatra MVC File Structure
 
 ## Overview
 
@@ -10,7 +10,7 @@ We'll review the file structure we'll be using for our MVC Sinatra applications.
 2. Describe the different folders in the `app` directory and create new files and add code to these folders
 3. Complete and run a Sinatra MVC application
 
-## Keeping Code Organized 
+## Keeping Code Organized
 
 We could, if we wanted to, write our entire app in a single file. As you might imagine, this would make things very difficult to read and debug.
 
