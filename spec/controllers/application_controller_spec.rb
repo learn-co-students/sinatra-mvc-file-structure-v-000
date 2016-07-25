@@ -1,12 +1,8 @@
 require 'pry'
 
 describe ApplicationController do
-  describe 'Dog class' do 
-
-    before do
-      DOG = []
-    end
-    it 'can create a dog with attributes on initialization' do 
+  describe 'Dog class' do
+    it 'can create a dog with attributes on initialization' do
       Dog.new("rudolph", "mastiff", 2)
       expect(Dog.all.count).to eq (1)
     end
@@ -34,7 +30,7 @@ describe ApplicationController do
 
 
   describe 'GET /' do
-    
+
     it 'responds with a 200' do
       get '/'
       expect(last_response.status).to eq(200)
