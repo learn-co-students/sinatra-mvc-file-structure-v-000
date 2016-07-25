@@ -66,13 +66,13 @@ Create a new file in the models directory to create a dog class. This class shou
 
 The controllers, such as `application_controller.rb`, are where the application configurations, routes, and controller actions are implemented. There is typically a class, which in this case we will call `ApplicationController`, that represents an instance of your application when the server is up and running. The `application_controller.rb` file represents the "C" components of the MVC paradigm.
 
-(In some simple applications -including several labs and code-alongs in this track - the Application Controller will simply be called `app.rb` and will live in the root directory of the project)
+(In some simple applications –– including several labs and code-alongs in this track –– the Application Controller will simply be called `app.rb` and will live in the root directory of the project)
 
 Sometimes our other controllers will use `ApplicationController` as an inheritance point so that they inherit all the defaults and behaviors defined in our main `ApplicationController`. Other times our other controllers will simply inherit from `Sinatra::Base`.
 
-Controllers represent the application logic, generally, the interface and flow of our application.
+Controllers represent the application logic, generally; the interface and flow of our application.
 
-Let's go ahead and fill in our controller. You'll notice in `application_controller.rb`, we have a class `ApplicationController` which inherits from `Sinatra::Base`. When we start up a server, the server will spin up an instance of the `ApplicationController` class to run our app.
+Let's go ahead and fill in our controller. You'll notice in `application_controller.rb`, we have an `ApplicationController` class that inherits from `Sinatra::Base`. When we start up a server, the server will spin up an instance of the `ApplicationController` class to run our app.
 
 You'll also notice there is a `configure` block already in the controller. This configure block tells the controller where to look to find the views (your pages with HTML to display text in the browser.) and the public directory.
 
@@ -85,7 +85,7 @@ We've created a controller action that can receive and respond to a `GET` reques
 
 This directory holds the code that will be displayed in the browser. In a Sinatra app we use `.erb` files instead of `.html` files because .erb files allow us to include regular, old HTML tags AND special erb tags which contain Ruby code. We can name them anything we like, but by convention, our file names will match up with the action that renders them. For example, a GET request to `/` typically renders a file called `index.erb`.
 
-Views represent how things look and are displayed in our application. We've created a file `index.erb` that contains some some basic HTML code.
+Views represent how things look and are displayed in our application. We've created a file `index.erb` that contains some basic HTML code.
 
 We've already told the controller how to load this file in the view.
 
@@ -97,7 +97,7 @@ A `config.ru` file is necessary when building Rack-based applications and using 
 
 Once all our code is loaded, `config.ru` then specifies which controllers to load as part of our application using `run` or `use`.
 
-In this case, our `config.ru` file has this line `run ApplicationController`, creating an instance of our ApplicationController class which can respond to requests from a client.
+In this case, our `config.ru` file contains the line `run ApplicationController`, which creates an instance of our ApplicationController class that can respond to requests from a client.
 
 ### `config` directory
 
