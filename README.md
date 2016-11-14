@@ -66,7 +66,7 @@ Create a new file in the models directory to create a dog class. This class shou
 
 The controllers, such as `application_controller.rb`, are where the application configurations, routes, and controller actions are implemented. There is typically a class, which in this case we will call `ApplicationController`, that represents an instance of your application when the server is up and running. The `application_controller.rb` file represents the "C" components of the MVC paradigm.
 
-(In some simple applications –– including several labs and code-alongs in this track –– the Application Controller will simply be called `app.rb` and will live in the root directory of the project)
+(In some simple applications –– including several labs and code-alongs in this track –– the Application Controller will simply be called `app.rb` and will live in the root directory of the project.)
 
 Sometimes our other controllers will use `ApplicationController` as an inheritance point so that they inherit all the defaults and behaviors defined in our main `ApplicationController`. Other times our other controllers will simply inherit from `Sinatra::Base`.
 
@@ -74,7 +74,7 @@ Controllers represent the application logic, generally; the interface and flow o
 
 Let's go ahead and fill in our controller. You'll notice in `application_controller.rb`, we have an `ApplicationController` class that inherits from `Sinatra::Base`. When we start up a server, the server will spin up an instance of the `ApplicationController` class to run our app.
 
-You'll also notice there is a `configure` block already in the controller. This configure block tells the controller where to look to find the views (your pages with HTML to display text in the browser.) and the public directory.
+You'll also notice there is a `configure` block already in the controller. This configure block tells the controller where to look to find the views (your pages with HTML to display text in the browser) and the public directory.
 
 When a client makes a request to a server to load an application, the request is received and processed by the controller. We need to set up a controller action to accept the request and respond with the appropriate HTML.
 
@@ -103,7 +103,7 @@ In this case, our `config.ru` file contains the line `run ApplicationController`
 
 This directory holds an `environment.rb` file. We'll be using this file to connect up all the files in our application to the appropriate gems and to each other.
 
-This `environment.rb` file loads Bundler and thus all the gems in our Gemfile, as well as the `app` directory`.
+This `environment.rb` file loads Bundler and thus all the gems in our Gemfile, as well as the `app` directory.
 
 ### `public` directory
 
@@ -116,3 +116,5 @@ The `spec` directory contains any tests for our applications. These tests set up
 Don't forget to run your tests!
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/sinatra-mvc-file-structure' title='Sinatra MVC File Structure'>Sinatra MVC File Structure</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/sinatra-mvc-file-structure'>Sinatra MVC File Structure</a> on Learn.co and start learning to code for free.</p>
