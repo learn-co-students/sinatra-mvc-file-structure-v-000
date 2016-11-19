@@ -1,0 +1,16 @@
+current directory: /home/chenxi/fi/sinatra-mvc-file-structure-v-000/vendor/bundle/ruby/2.3.0/gems/bond-0.5.1/ext/readline_line_buffer
+/usr/bin/ruby2.3 -r ./siteconf20161119-9106-5ed1in.rb extconf.rb
+
+current directory: /home/chenxi/fi/sinatra-mvc-file-structure-v-000/vendor/bundle/ruby/2.3.0/gems/bond-0.5.1/ext/readline_line_buffer
+make "DESTDIR=" clean
+make: *** No rule to make target 'clean'.  Stop.
+
+current directory: /home/chenxi/fi/sinatra-mvc-file-structure-v-000/vendor/bundle/ruby/2.3.0/gems/bond-0.5.1/ext/readline_line_buffer
+make "DESTDIR="
+echo "This is a dummy extension"
+This is a dummy extension
+
+current directory: /home/chenxi/fi/sinatra-mvc-file-structure-v-000/vendor/bundle/ruby/2.3.0/gems/bond-0.5.1/ext/readline_line_buffer
+make "DESTDIR=" install
+echo "This is a dummy extension"
+This is a dummy extension

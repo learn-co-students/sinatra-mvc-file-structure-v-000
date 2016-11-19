@@ -1,0 +1,20 @@
+current directory: /home/chenxi/fi/sinatra-mvc-file-structure-v-000/vendor/bundle/ruby/2.3.0/gems/eventmachine-1.0.8/ext/fastfilereader
+/usr/bin/ruby2.3 -r ./siteconf20161119-9106-tk9tbr.rb extconf.rb
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /home/chenxi/fi/sinatra-mvc-file-structure-v-000/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/eventmachine-1.0.8/mkmf.log
+
+current directory: /home/chenxi/fi/sinatra-mvc-file-structure-v-000/vendor/bundle/ruby/2.3.0/gems/eventmachine-1.0.8/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /home/chenxi/fi/sinatra-mvc-file-structure-v-000/vendor/bundle/ruby/2.3.0/gems/eventmachine-1.0.8/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.so
+
+current directory: /home/chenxi/fi/sinatra-mvc-file-structure-v-000/vendor/bundle/ruby/2.3.0/gems/eventmachine-1.0.8/ext/fastfilereader
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20161119-9106-1xgba8p
