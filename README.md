@@ -74,7 +74,7 @@ Controllers represent the application logic, generally; the interface and flow o
 
 Let's go ahead and fill in our controller. You'll notice in `application_controller.rb`, we have an `ApplicationController` class that inherits from `Sinatra::Base`. When we start up a server, the server will spin up an instance of the `ApplicationController` class to run our app.
 
-You'll also notice there is a `configure` block already in the controller. This configure block tells the controller where to look to find the views (your pages with HTML to display text in the browser.) and the public directory.
+You'll also notice there is a `configure` block already in the controller. This configure block tells the controller where to look to find the views (your pages with HTML to display text in the browser) and the public directory.
 
 When a client makes a request to a server to load an application, the request is received and processed by the controller. We need to set up a controller action to accept the request and respond with the appropriate HTML.
 
@@ -116,3 +116,5 @@ The `spec` directory contains any tests for our applications. These tests set up
 Don't forget to run your tests!
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/sinatra-mvc-file-structure' title='Sinatra MVC File Structure'>Sinatra MVC File Structure</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/sinatra-mvc-file-structure'>Sinatra MVC File Structure</a> on Learn.co and start learning to code for free.</p>
