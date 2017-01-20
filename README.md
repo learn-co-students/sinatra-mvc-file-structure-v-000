@@ -10,7 +10,7 @@ We'll review the file structure we'll be using for our MVC Sinatra applications.
 2. Describe the different folders in the `app` directory and create new files and add code to these folders
 3. Complete and run a Sinatra MVC application
 
-## Keeping Code Organized 
+## Keeping Code Organized
 
 We could, if we wanted to, write our entire app in a single file. As you might imagine, this would make things very difficult to read and debug.
 
@@ -103,7 +103,7 @@ In this case, our `config.ru` file contains the line `run ApplicationController`
 
 This directory holds an `environment.rb` file. We'll be using this file to connect up all the files in our application to the appropriate gems and to each other.
 
-This `environment.rb` file loads Bundler and thus all the gems in our Gemfile, as well as the `app` directory`.
+This `environment.rb` file loads Bundler and thus all the gems in our Gemfile, as well as the `app` directory.
 
 ### `public` directory
 
