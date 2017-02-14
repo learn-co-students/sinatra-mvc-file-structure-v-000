@@ -1,0 +1,20 @@
+current directory: /Users/matthewborg/developing/learn.co/sinatra/sinatra-mvc-file-structure-v-000/vendor/bundle/gems/eventmachine-1.0.8/ext/fastfilereader
+/Users/matthewborg/.rvm/rubies/ruby-2.3.3/bin/ruby -r ./siteconf20170213-55156-5zmrfe.rb extconf.rb
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /Users/matthewborg/developing/learn.co/sinatra/sinatra-mvc-file-structure-v-000/vendor/bundle/extensions/x86_64-darwin-16/2.3.0/eventmachine-1.0.8/mkmf.log
+
+current directory: /Users/matthewborg/developing/learn.co/sinatra/sinatra-mvc-file-structure-v-000/vendor/bundle/gems/eventmachine-1.0.8/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /Users/matthewborg/developing/learn.co/sinatra/sinatra-mvc-file-structure-v-000/vendor/bundle/gems/eventmachine-1.0.8/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.bundle
+
+current directory: /Users/matthewborg/developing/learn.co/sinatra/sinatra-mvc-file-structure-v-000/vendor/bundle/gems/eventmachine-1.0.8/ext/fastfilereader
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 fastfilereaderext.bundle ./.gem.20170213-55156-12uzmwd
