@@ -10,6 +10,7 @@ class Dog
     @name = name
     @breed = breed
     @age = age
+    @@all << self
   end
 
 #class method all to return an array of those instances.
