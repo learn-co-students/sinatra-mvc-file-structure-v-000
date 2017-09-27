@@ -4,6 +4,9 @@ class Dog
 
   @@all = []
 
+  def self.all; @@all end
+
+
     def initialize(name, breed, age)
       @name = name
       @breed = breed
