@@ -1,3 +1,5 @@
 class Model
 
+
+
 end
