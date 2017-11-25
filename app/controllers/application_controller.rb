@@ -5,7 +5,7 @@ class ApplicationController < Sinatra::Base
   	set :public_dir, "public"
   end
 
-  get "/" do
-  	erb :index
+  get "/" do #GET request for the root URL
+  	erb :index #loads the index.erb file from views
   end
 end
