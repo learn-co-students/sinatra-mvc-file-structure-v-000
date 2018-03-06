@@ -48,7 +48,7 @@ Take a look at the file structure in this directory. It's okay if it feels overw
 
 This holds a list of all the gems needed to run the application. The bundler gem provides us access to a terminal command: `bundle install`. Bundler will look in the Gemfile and install any gems, as well as any gem dependencies for this application.
 
-Go ahead and enter this command in terminal. It will create a `Gemfile.lock` file for you, which is just a documentation of what versions of the gem you have installed and should use. The lock word is actually because it makes sure that only one thing is running bundle install at a time.
+Go ahead and enter this command in terminal. It will create a `Gemfile.lock` file for you, which is just a documentation of the specific gems version that should be installed.
 
 ### `app` directory
 
