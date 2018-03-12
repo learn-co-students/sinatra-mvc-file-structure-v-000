@@ -114,7 +114,4 @@ The `public` directory holds our front-end assets. In the example above, it hold
 The `spec` directory contains any tests for our applications. These tests set up any expectations for the rest of the project. These are often broken down into unit tests for models, controller tests for routes, and feature tests, which check the actual behavior for users.
 
 Don't forget to run your tests!
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/sinatra-mvc-file-structure' title='Sinatra MVC File Structure'>Sinatra MVC File Structure</a> on Learn.co and start learning to code for free.</p>
-
 <p class='util--hide'>View <a href='https://learn.co/lessons/sinatra-mvc-file-structure'>Sinatra MVC File Structure</a> on Learn.co and start learning to code for free.</p>
