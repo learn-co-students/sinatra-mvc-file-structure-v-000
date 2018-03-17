@@ -1,4 +1,4 @@
-require 'pry'
+# require 'pry'
 
 describe ApplicationController do
   describe 'Dog class' do
