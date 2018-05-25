@@ -1,6 +1,6 @@
 require 'pry'
 
-describe ApplicationController do
+puts describe ApplicationController do
   describe 'Dog class' do
     it 'can create a dog with attributes on initialization' do
       Dog.new("rudolph", "mastiff", 2)
@@ -35,7 +35,7 @@ describe ApplicationController do
   end
 
 
-  describe 'GET /' do
+  puts describe 'GET /' do
 
     it 'responds with a 200' do
       get '/'
