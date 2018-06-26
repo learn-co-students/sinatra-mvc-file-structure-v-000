@@ -1,3 +1,5 @@
+
+
 class ApplicationController < Sinatra::Base
 
   configure do
