@@ -15,4 +15,4 @@ class Dog
     @@all
   end
 
-end #end of class
+end #eoc
