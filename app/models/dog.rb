@@ -15,7 +15,7 @@ def initialize(name, breed, age)
   @age = age
   @@all << self
 
-binding.pry
+
 end 
 
 def self.all
