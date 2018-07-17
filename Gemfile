@@ -7,6 +7,10 @@ gem 'rake'
 gem 'thin'
 gem 'shotgun'
 gem 'pry'
+gem 'sqlite3'
+gem 'activerecord'
+gem 'sinatra-activerecord'
+gem 'database_cleaner'
 
 group :test do
   gem 'rspec'
