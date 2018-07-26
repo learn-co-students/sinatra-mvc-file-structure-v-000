@@ -1,12 +1,30 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    activemodel (4.2.10)
+      activesupport (= 4.2.10)
+      builder (~> 3.1)
+    activerecord (4.2.10)
+      activemodel (= 4.2.10)
+      activesupport (= 4.2.10)
+      arel (~> 6.0)
+    activesupport (4.2.10)
+      i18n (~> 0.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
+      tzinfo (~> 1.1)
+    arel (6.0.4)
     bond (0.5.1)
+    builder (3.2.3)
     coderay (1.1.0)
+    concurrent-ruby (1.0.5)
     daemons (1.2.3)
     diff-lcs (1.2.5)
     eventmachine (1.0.8)
+    i18n (0.9.5)
+      concurrent-ruby (~> 1.0)
     method_source (0.8.2)
+    minitest (5.8.3)
     pry (0.10.3)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -50,17 +68,21 @@ GEM
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
       rack (~> 1.0)
+    thread_safe (0.3.6)
     tilt (2.0.2)
     tux (0.3.0)
       ripl (>= 0.3.5)
       ripl-multi_line (>= 0.2.4)
       ripl-rack (>= 0.2.0)
       sinatra (>= 1.2.1)
+    tzinfo (1.2.5)
+      thread_safe (~> 0.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord (~> 4.2)
   pry
   rack-test
   rake
@@ -72,4 +94,4 @@ DEPENDENCIES
   tux
 
 BUNDLED WITH
-   1.10.6
+   1.16.3
