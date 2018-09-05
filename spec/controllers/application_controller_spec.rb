@@ -1,5 +1,7 @@
 require 'pry'
 
+#require_relative "../../app/models/dog.rb"
+
 describe ApplicationController do
   describe 'Dog class' do
     it 'can create a dog with attributes on initialization' do
