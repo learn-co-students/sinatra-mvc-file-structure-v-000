@@ -7,6 +7,7 @@ We'll review the file structure we'll be using for our MVC Sinatra applications.
 ## Objectives
 
 1. Explain the files and folders in a Sinatra MVC file structure
+
 2. Describe the different folders in the `app` directory and create new files
    and add code to these folders
 3. Complete and run a Sinatra MVC application
@@ -31,6 +32,7 @@ Take a look at the file structure in this directory. It's okay if it feels
 overwhelming at first. We're going to walk through the different files and
 folders and discuss what their responsibilities are.
 
+
 ```bash
 ├── Gemfile
 ├── README.md
@@ -54,6 +56,7 @@ folders and discuss what their responsibilities are.
 ```
 
 ### `Gemfile`
+
 
 This holds a list of all the gems needed to run the application. The bundler
 gem provides us access to a terminal command: `bundle install`. Bundler will
@@ -137,10 +140,10 @@ We've already told the controller how to load this file in the view.
 
 ### `config.ru` file
 
-A `config.ru` file is necessary when building Rack-based applications and using `rackup`/`shotgun` to start the application server (the ru stands for rackup).
-
-`config.ru` is first responsible for loading our application environment, code,
-and libraries.
+A `config.ru` file is necessary when building Rack-based applications and 
+using `rackup`/`shotgun` to start the application server (the ru stands for 
+rackup). `config.ru` is first responsible for loading our application 
+environment, code, and libraries.
 
 Once all our code is loaded, `config.ru` then specifies which controllers to
 load as part of our application using `run` or `use`.
@@ -148,6 +151,7 @@ load as part of our application using `run` or `use`.
 In this case, our `config.ru` file contains the line
 `run ApplicationController`, which creates an instance of our
 ApplicationController class that can respond to requests from a client.
+
 
 ### `config` directory
 
@@ -158,6 +162,9 @@ other.
 This `environment.rb` file loads Bundler and thus all the gems in our Gemfile,
 as well as the `app` directory.
 
+This `environment.rb` file loads Bundler and thus all the gems in our Gemfile,
+as well as the `app` directory`.
+
 ### `public` directory
 
 The `public` directory holds our front-end assets. In the example above, it
@@ -165,6 +172,7 @@ holds a `css` directory with a stylesheet. Javascript directories and any other
 front-end assets (like image files) should also be stored in `public`.
 
 ### `spec` directory
+
 
 The `spec` directory contains any tests for our applications. These tests set
 up any expectations for the rest of the project. These are often broken down
@@ -174,3 +182,4 @@ which check the actual behavior for users.
 Don't forget to run your tests!
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/sinatra-mvc-file-structure'>Sinatra MVC File Structure</a> on Learn.co and start learning to code for free.</p>
+
