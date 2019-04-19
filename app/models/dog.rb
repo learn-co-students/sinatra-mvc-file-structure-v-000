@@ -11,12 +11,6 @@ class Dog
     @@all << self
   end
   
-#   get '/all' do
-#   # @dog = Dog.all
- 
-#   # erb :'all/index.html.erb'
-# end
-  
   def self.all
     @@all
   end
