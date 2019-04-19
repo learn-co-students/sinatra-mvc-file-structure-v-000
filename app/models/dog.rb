@@ -17,7 +17,7 @@ class Dog
 #   # erb :'all/index.html.erb'
 # end
   
-  def all
+  def self.all
     @@all
   end
 
