@@ -21,6 +21,7 @@ describe ApplicationController do
       @dog = Dog.new("rudolph", "mastiff", 2)
       expect(@dog.age).to eq(2)
     end
+
     it 'can change dog name' do
       @dog = Dog.new("rudolph", "mastiff", 2)
       @dog.name = "bessie"
@@ -31,7 +32,6 @@ describe ApplicationController do
       @dog.age = 4
       expect(@dog.age).to eq(4)
     end
-
   end
 
 
