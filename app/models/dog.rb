@@ -8,7 +8,7 @@ class Dog
     #@breed = breed 
     #@age = age
     
-    @name, @breed, @age = name, breed, age # Interesting; this sets the values AND returns an array of those values!
+    @name, @breed, @age = name, breed, age # Interestingly, this sets the values AND returns an ARRAY of those values!
     
     @@all << self
   end
