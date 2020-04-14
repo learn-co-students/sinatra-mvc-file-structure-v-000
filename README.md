@@ -61,7 +61,7 @@ look in the Gemfile and install any gems, as well as any gem dependencies for
 this application.
 
 Go ahead and enter this command in terminal. It will create a `Gemfile.lock`
-file for you, which is just a documentation of the specific gems version that
+file for you, which is just a documentation of the specific gem versions that
 should be installed.
 
 ### `app` directory
@@ -87,7 +87,8 @@ also keep track of each instance of dog created, as well as a class method
 
 #### `controllers` directory
 
-The controllers, such as `application_controller.rb`, are where the application configurations, routes, and controller actions are implemented. There is
+The controllers, such as `application_controller.rb`, are where the application 
+configurations, routes, and controller actions are implemented. There is
 typically a class, which in this case we will call `ApplicationController`,
 that represents an instance of your application when the server is up and
 running. The `application_controller.rb` file represents the "C" components of
@@ -137,7 +138,8 @@ We've already told the controller how to load this file in the view.
 
 ### `config.ru` file
 
-A `config.ru` file is necessary when building Rack-based applications and using `rackup`/`shotgun` to start the application server (the ru stands for rackup).
+A `config.ru` file is necessary when building Rack-based applications and using 
+`rackup`/`shotgun` to start the application server (the ru stands for rackup).
 
 `config.ru` is first responsible for loading our application environment, code,
 and libraries.
