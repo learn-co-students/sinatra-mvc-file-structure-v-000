@@ -6,6 +6,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
+    "My dog's breed is dalmation"
   	erb :index
   end
 end
