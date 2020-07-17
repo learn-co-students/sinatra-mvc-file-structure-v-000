@@ -3,6 +3,7 @@ require 'pry'
 describe ApplicationController do
   describe 'Dog class' do
     it 'can create a dog with attributes on initialization' do
+      # binding.pry
       Dog.new("rudolph", "mastiff", 2)
       expect(Dog.all.count).to eq (1)
     end
