@@ -1,3 +1,4 @@
+require_relative './patches'
 ENV['SINATRA_ENV'] ||= "development"
 ENV['RACK_ENV'] ||= "development"
 
