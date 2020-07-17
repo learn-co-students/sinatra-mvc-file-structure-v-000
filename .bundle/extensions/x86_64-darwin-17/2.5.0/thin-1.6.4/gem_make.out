@@ -1,0 +1,37 @@
+current directory: /Users/mikekruszewski/Development/flatiron/Sinatra/sinatra-mvc-file-structure-v-000/.bundle/gems/thin-1.6.4/ext/thin_parser
+/Users/mikekruszewski/.rvm/rubies/ruby-2.5.0/bin/ruby -r ./siteconf20180308-87347-qlvppc.rb extconf.rb
+checking for main() in -lc... yes
+creating Makefile
+
+current directory: /Users/mikekruszewski/Development/flatiron/Sinatra/sinatra-mvc-file-structure-v-000/.bundle/gems/thin-1.6.4/ext/thin_parser
+make "DESTDIR=" clean
+
+current directory: /Users/mikekruszewski/Development/flatiron/Sinatra/sinatra-mvc-file-structure-v-000/.bundle/gems/thin-1.6.4/ext/thin_parser
+make "DESTDIR="
+compiling parser.c
+parser.c:31:18: warning: unused variable 'http_parser_en_main' [-Wunused-const-variable]
+static const int http_parser_en_main = 1;
+                 ^
+1 warning generated.
+compiling thin.c
+thin.c:242:3: warning: implicit declaration of function 'thin_http_parser_init' is invalid in C99 [-Wimplicit-function-declaration]
+  thin_http_parser_init(hp);
+  ^
+thin.c:294:3: warning: implicit declaration of function 'thin_http_parser_finish' is invalid in C99 [-Wimplicit-function-declaration]
+  thin_http_parser_finish(http);
+  ^
+thin.c:296:10: warning: implicit declaration of function 'thin_http_parser_is_finished' is invalid in C99 [-Wimplicit-function-declaration]
+  return thin_http_parser_is_finished(http) ? Qtrue : Qfalse;
+         ^
+thin.c:334:5: warning: implicit declaration of function 'thin_http_parser_execute' is invalid in C99 [-Wimplicit-function-declaration]
+    thin_http_parser_execute(http, dptr, dlen, from);
+    ^
+thin.c:338:8: warning: implicit declaration of function 'thin_http_parser_has_error' is invalid in C99 [-Wimplicit-function-declaration]
+    if(thin_http_parser_has_error(http)) {
+       ^
+5 warnings generated.
+linking shared-object thin_parser.bundle
+
+current directory: /Users/mikekruszewski/Development/flatiron/Sinatra/sinatra-mvc-file-structure-v-000/.bundle/gems/thin-1.6.4/ext/thin_parser
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 thin_parser.bundle ./.gem.20180308-87347-6i7cig
