@@ -1,3 +1,3 @@
-class Model
+class Model < ApplicationController
 
 end
