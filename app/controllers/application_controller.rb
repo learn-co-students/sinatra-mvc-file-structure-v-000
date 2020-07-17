@@ -1,3 +1,5 @@
+require_relative '../models/dog'
+
 class ApplicationController < Sinatra::Base
 
   configure do
