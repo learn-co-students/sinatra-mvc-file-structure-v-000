@@ -9,6 +9,7 @@ describe ApplicationController do
 
     it 'can read dog name' do
       @dog = Dog.new("rudolph", "mastiff", 2)
+      
       expect(@dog.name).to eq("rudolph")
     end
 
