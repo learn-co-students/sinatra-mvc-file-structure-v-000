@@ -16,7 +16,7 @@ GEM
       rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
-    rake (12.3.2)
+    rake (12.3.3)
     require_all (2.0.0)
     ripl (0.7.1)
       bond (~> 0.5.1)
